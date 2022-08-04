@@ -1,0 +1,79 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "ATours.UsesCases/1.0.0": {
+        "dependencies": {
+          "ATours.Entities": "1.0.0",
+          "ATours.UseCasesDtos": "1.0.0",
+          "FluentValidation": "10.3.5",
+          "MediatR": "9.0.0"
+        },
+        "runtime": {
+          "ATours.UsesCases.dll": {}
+        }
+      },
+      "FluentValidation/10.3.5": {
+        "runtime": {
+          "lib/net5.0/FluentValidation.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "10.3.5.0"
+          }
+        }
+      },
+      "MediatR/9.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
+        }
+      },
+      "ATours.Entities/1.0.0": {
+        "runtime": {
+          "ATours.Entities.dll": {}
+        }
+      },
+      "ATours.UseCasesDtos/1.0.0": {
+        "runtime": {
+          "ATours.UseCasesDtos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ATours.UsesCases/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FluentValidation/10.3.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Mt2CnRqNA5+vXVNFY05yLuOG3OLYR7Q/ZcP/rcJZPNPbg95foVUruyQEmKl1GeXVnT2+u6rjGU2ZCdgF//QU2A==",
+      "path": "fluentvalidation/10.3.5",
+      "hashPath": "fluentvalidation.10.3.5.nupkg.sha512"
+    },
+    "MediatR/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8b3UYNxegHVYcJMG2zH8wn+YqxLvXG+eMfj0cMCq/jTW72p6O3PCKMkrIv0mqyxdW7bA4gblsocw7n+/9Akg5g==",
+      "path": "mediatr/9.0.0",
+      "hashPath": "mediatr.9.0.0.nupkg.sha512"
+    },
+    "ATours.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "ATours.UseCasesDtos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

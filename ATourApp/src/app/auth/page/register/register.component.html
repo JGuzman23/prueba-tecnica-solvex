@@ -1,0 +1,85 @@
+
+
+<form class="needs-validation" #useForm="ngForm">
+    <div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+
+        <div class="wrapper wrapper--w790">
+            <div class="card card-5">
+                <div class="card-heading">
+    
+                    <div class="row" style="display:flex ;">
+                        <div class="col-ms"><i class="fa-solid fa-circle-arrow-left fa-2x">
+                                <a [routerLink]="['/login']">back to login</a>
+                            </i>
+    
+                        </div>
+                        <div class="col-ms">
+                            <h2 class="title">Registrate </h2>
+                        </div>
+                    </div>
+    
+    
+                </div>
+                <div class="card-body">
+                    <form method="POST">
+                        <div class="form-row m-b-55">
+                            <div class="name">Name</div>
+                            <div class="value">
+                                <div class="row row-space">
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input [(ngModel)]="model.name" class="input--style-5" type="text" name="first_name">
+                                            <label class="label--desc">first name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-2">
+                                        <div class="input-group-desc">
+                                            <input [(ngModel)]="model.lastName" class="input--style-5" type="text" name="last_name">
+                                            <label class="label--desc">last name</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="form-row">
+                            <div class="name">Email</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input [(ngModel)]="model.email" class="input--style-5" type="email" name="email">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row m-b-55">
+                            <div class="name">Phone</div>
+                            <div class="value">
+                                <div class="row row-refine">
+                          
+                                    <div class="col-9">
+                                        <div class="input-group-desc">
+                                            <input [(ngModel)]="model.cellPhone" class="input--style-5" type="text" name="phone">
+                                            <label class="label--desc">Phone Number</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="name">Password</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <input [(ngModel)]="model.password" class="input--style-5" type="password" name="company">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div style="justify-content: space-around; display: flex;">
+                            <button class="btn btn--radius-2 btn--green" (click)="Create()" >Register</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

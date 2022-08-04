@@ -1,0 +1,84 @@
+
+<body>
+	<form >
+
+		<div  id="booking" class="section">
+			<div class="section-center">
+				<div class="container">
+					<div class="row">
+						<div class="booking-form">
+							<form class="col-md-12 formm ">
+								<div class="col-md-8">
+									
+									<div class="col-md-12 formm " >
+										<div class="col-md-12">
+											<div class="form-group" >
+												<input   [(ngModel)]="termino" name="termino" class="form-control" type="text" placeholder="Nombre del hotel ">
+												<span class="form-label">Destination</span>
+											</div>
+											
+										</div>
+										
+										
+									</div>
+									
+							
+									<div class="col-md-12  formm">
+										<div class="col-md-6">
+											<div class="form-group">
+												<input class="form-control " type="date" required>
+												<span class="form-label">Check In</span>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<input class="form-control" type="date" required>
+												<span class="form-label">Check out</span>
+											</div>
+										</div>
+										
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="col-md-12 formm">
+										
+										<div class="col-md-6">
+											<div class="form-group">
+												<select class="form-control">
+													<option>0</option>
+													<option>1</option>
+													<option>2</option>
+												</select>
+												<span class="select-arrow"></span>
+												<span class="form-label">Guests</span>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<select class="form-control">
+													<option>1</option>
+													<option>2</option>
+													<option>3</option>
+												</select>
+												<span class="select-arrow"></span>
+												<span class="form-label">Children</span>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-12">
+										<div class="form-btn">
+											<button (click)="buscar()" class="submit-btn">Check availability</button>
+										</div>
+									</div>
+								</div>
+		
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> 
+	</form>
+	
+	
+</body>

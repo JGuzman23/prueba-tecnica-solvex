@@ -1,0 +1,125 @@
+<div class="container">
+  <div class="main-body">
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="main-breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a style="font-size: 20px;" [routerLink]="['/hotel']">Regresar</a></li>
+
+      </ol>
+    </nav>
+    <!-- /Breadcrumb -->
+
+    <div class="row ">
+      <div class="col-md-12">
+
+        <div class="card">
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center text-center">
+              <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Admin" class="rounded-circle"
+                width="150">
+              <div class="mt-3">
+                <h4>{{model.name }} {{model.lastName}}</h4>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <br>
+      <div class="col-md-12">
+        <div class="card mt-3">
+          <h3 style="text-align: center;">Lista de reservas activas</h3>
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Hotel</th>
+                <th scope="col">Fecha de entrada</th>
+                <th scope="col">Fecha de salida</th>
+                <th scope="col">habitaiones</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of reservas; let i=index">
+                <th scope="row">{{i+1}}</th>
+                <td></td>
+                <td>{{item.startDay| date:'short' }}</td>
+                <td>{{item.endDay| date:'short'}}</td>
+                <td>{{item.countRoon}}</td>
+              </tr>
+
+            </tbody>
+          </table>
+
+
+        </div>
+      </div>
+
+      <hr>
+      
+        <div class="col-md-12">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">First Name</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  <input [(ngModel)]="model.name"  [disabled]="desableEdit" type="text" class="form-control">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Last Name</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  <input [(ngModel)]="model.lastName" [disabled]="desableEdit" type="text" class="form-control">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Email</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  <input [(ngModel)]="model.email"[disabled]="desableEdit"  type="text" class="form-control">
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Phone</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  <input [(ngModel)]="model.cellPhone" [disabled]="desableEdit"  type="text" class="form-control">
+                </div>
+              </div>
+  
+              <hr>
+  
+              <div class="row">
+                <div class="col-sm-12 "style="display: flex;">
+                  <div  *ngIf="desableEdit; else save">
+                    <button class="btn btn-info mr-3" (click)="editar()">Editar </button>
+                  </div>
+                  <ng-template #save>
+                    <button class="btn btn-success mr-3" (click)="guardar()">Actualizar </button>
+                  </ng-template>
+                  
+                  <button class="btn btn-danger">Eliminar Cuenta </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+       
+    </div>
+
+  </div>
+</div>

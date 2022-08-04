@@ -1,0 +1,17 @@
+C:\repos\ATours\ATours.UsesCases\bin\Debug\net5.0\ATours.UsesCases.deps.json
+C:\repos\ATours\ATours.UsesCases\bin\Debug\net5.0\ATours.UsesCases.dll
+C:\repos\ATours\ATours.UsesCases\bin\Debug\net5.0\ref\ATours.UsesCases.dll
+C:\repos\ATours\ATours.UsesCases\bin\Debug\net5.0\ATours.UsesCases.pdb
+C:\repos\ATours\ATours.UsesCases\bin\Debug\net5.0\ATours.Entities.dll
+C:\repos\ATours\ATours.UsesCases\bin\Debug\net5.0\ATours.UseCasesDtos.dll
+C:\repos\ATours\ATours.UsesCases\bin\Debug\net5.0\ATours.Entities.pdb
+C:\repos\ATours\ATours.UsesCases\bin\Debug\net5.0\ATours.UseCasesDtos.pdb
+C:\repos\ATours\ATours.UsesCases\obj\Debug\net5.0\ATours.UsesCases.csproj.AssemblyReference.cache
+C:\repos\ATours\ATours.UsesCases\obj\Debug\net5.0\ATours.UsesCases.GeneratedMSBuildEditorConfig.editorconfig
+C:\repos\ATours\ATours.UsesCases\obj\Debug\net5.0\ATours.UsesCases.AssemblyInfoInputs.cache
+C:\repos\ATours\ATours.UsesCases\obj\Debug\net5.0\ATours.UsesCases.AssemblyInfo.cs
+C:\repos\ATours\ATours.UsesCases\obj\Debug\net5.0\ATours.UsesCases.csproj.CoreCompileInputs.cache
+C:\repos\ATours\ATours.UsesCases\obj\Debug\net5.0\ATours.UsesCases.csproj.CopyComplete
+C:\repos\ATours\ATours.UsesCases\obj\Debug\net5.0\ATours.UsesCases.dll
+C:\repos\ATours\ATours.UsesCases\obj\Debug\net5.0\ref\ATours.UsesCases.dll
+C:\repos\ATours\ATours.UsesCases\obj\Debug\net5.0\ATours.UsesCases.pdb

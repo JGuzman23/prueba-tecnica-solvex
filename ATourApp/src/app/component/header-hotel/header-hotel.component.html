@@ -1,0 +1,56 @@
+<div class="navbar navbar-expand-lg bg-light navbar-light">
+    <div class="container-fluid">
+        <a [routerLink]="['/hotel']" class="navbar-brand">Adv <span>Tours</span></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav ml-auto">
+                <a [routerLink]="['/hotel']" class="nav-item nav-link ">Home</a>
+                <a [routerLink]="['/hotel/list']" class="nav-item nav-link">Hoteles</a>
+                <a href="booking.html" class="nav-item nav-link">Contacto</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">$</a>
+                    <div class="dropdown-menu">
+                        <a href="blog.html" class="dropdown-item">USA</a>
+                        <a href="single.html" class="dropdown-item">RD</a>
+                    </div>
+                </div>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Cuenta</a>
+
+                    <div *ngIf="authSeervice.isLogged;else needlogin" class="dropdown-menu">
+
+                        <a [routerLink]="['/user/detail']" class="dropdown-item nav-item nav-link">Mi Cuenta</a>
+                        <button (click)="logout()" class="dropdown-item nav-item nav-link">Cerrar Session</button>
+
+                    </div>
+                    <ng-template #needlogin>
+                        <div class="dropdown-menu">
+                            <a [routerLink]="['/login']" class="dropdown-item nav-item nav-link">Iniciar Sesion</a>
+
+                            <a [routerLink]="['/register']" class="dropdown-item nav-item nav-link">Registrarme</a>
+
+                        </div>
+                    </ng-template>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-header mb-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2>Diviertete con nosotros</h2>
+            </div>
+            <div class="col-12">
+                <a href="">Home</a>
+                <a href="">Ofertas</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,57 @@
+<app-header-hotel></app-header-hotel>
+<app-booking-input (onEnter)="buscar($event)" >  </app-booking-input>
+
+
+<div class="section-header text-center">
+    <h2 style="color: #fbaf32;">Hoteles</h2>
+    <hr>
+    <hr>
+    <hr>
+  
+
+</div>
+
+<div *ngFor="let hotel of hoteles" class="hotel">
+    <div class="container mb-3">
+        <div class="row" style=" padding:  10px;  background: white; ">
+            <div class="col-lg-3 col-md-6">
+                <div class="hotel-item">
+                    <div class="hotel-img">
+                        <img src="./assets/hotel1.jpg" alt="Image">
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6">
+                <a href="*" style="font-size: 25px; color: #184c8f; text-decoration: none;">{{hotel.name}} </a>
+                <i class="fa fa-star " style="color: #fbaf32;"></i>
+                <i class="fa fa-star " style="color: #fbaf32;"></i>
+                <i class="fa fa-star " style="color: #fbaf32;"></i>
+                <i class="fa fa-star " style="color: #fbaf32;"></i>
+                <i class="fa fa-star " style="color: #fbaf32;"></i>
+                <h5>{{hotel.place}}</h5>
+                <strong>{{hotel.titleDescription}} </strong>
+                <p>{{hotel.description}}</p>
+               
+            </div>
+            <div class="col-lg-2 mt-2 ">
+                <div>
+                    <span style="color:#184c8f;">Puntuacion: </span>
+                    <button class="btn btn-primary disable ">{{hotel.point}}</button>
+
+                </div>
+                <div>
+                    <h3>Precio</h3>
+                    <h5 style="color: #258f2e;">$ {{hotel.price|number}}</h5>
+                    <button routerLink="/description" [queryParams]="{id:hotel.id}"  class="btn btn-outline-success ">Ver disponibilidad</button>
+                </div>
+
+            </div>
+
+        </div>
+   
+
+     
+    </div>
+</div>
+<app-footer></app-footer>
